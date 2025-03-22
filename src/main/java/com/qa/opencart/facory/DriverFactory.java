@@ -81,8 +81,8 @@ public class DriverFactory {
 	
 	public WebDriver initDriver(Properties prop) {
 		
-//		String browserName = prop.getProperty("browser"); //come from config.properties
-		String browserName = System.getProperty("browser");//come from cammand prompt
+		String browserName = prop.getProperty("browser"); //come from config.properties
+//		String browserName = System.getProperty("browser");//come from cammand prompt
 		
 		System.out.println("Browser Name is : " + browserName);
 		
